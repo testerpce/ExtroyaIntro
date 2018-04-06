@@ -16,6 +16,11 @@ I am adding the preprocessing file for now.
 # One improvement all of us should try to implement is using 4 separate  two class classifiers. Since each label has a label of 4 tags of which each tag can be one of two entities so Each of 4 classifiers will try to predict one entity for each tag  e.g. for _,_,_,_ each position is a tag and here the first tag takes values 'E' or 'N'
 
 I will upload the preprocessing file later where there will be four binary columns indicating one of the two binary entities for each of four tags.
+Update(sayambhu): I have now added the preprocessing where the four different binary columns for four different label types are given.
+#E for 1 and I for 0
+#N for 1 and S for 0
+#T for 1 and F for 0
+#J for 1 and P for 0
 
 
 Aniket will try to implement the RNN model in the kernel for that facebook data.

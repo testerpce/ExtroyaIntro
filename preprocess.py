@@ -109,3 +109,39 @@ print("Train set: \t\t{}".format(train_x.shape),
       "\nValidation set: \t{}".format(val_x.shape),
       "\nTest set: \t\t{}".format(test_x.shape))
 
+#4 two class classifier lists
+labels2=text.index.tolist()
+EIl=[]
+NSl=[]
+TFl=[]
+JPl=[]
+
+
+for i in labels2:
+    One=i[0]
+    Two=i[1]
+    Three=i[2]
+    Four=i[3]
+    
+    #E for 1 and I for 0
+    if One=='E':
+        EIl.append(1)
+    else:
+        EIl.append(0)
+    #N for 1 and S for 0
+    if Two=='N':
+        NSl.append(1)
+    else:
+        NSl.append(0)
+    #T for 1 and F for 0
+    if Three=='T':
+        TFl.append(1)
+    else:
+        TFl.append(0)
+    #J for 1 and P for 0
+    if Four=='J':
+        JPl.append(1)
+    else:
+        JPl.append(0)
+        
+        
