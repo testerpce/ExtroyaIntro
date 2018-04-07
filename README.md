@@ -23,6 +23,9 @@ Update(sayambhu): I have now added the preprocessing where the four different bi
 #J for 1 and P for 0
 
 
+# Edit: I have uploaded the pickle files and I made a mistake. Each row is a 500 length vector
+
+
 Aniket will try to implement the RNN model in the kernel for that facebook data.
 #The improvement point is using biRNNs. Try to do the same code using biRNNs
 

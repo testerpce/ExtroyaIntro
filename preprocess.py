@@ -138,10 +138,25 @@ for i in labels2:
         TFl.append(1)
     else:
         TFl.append(0)
-    #J for 1 and P for 0
+    
     if Four=='J':
         JPl.append(1)
     else:
         JPl.append(0)
-        
+
+def save_pickle(obj, file_name):
+    with open(file_name, 'wb') as f:
+        pickle.dump(obj, f)
+
+
+def load_pkl(file_name):
+    with open(file_name, 'rb') as f:
+        return pickle.load(f)
+
+save_pickle(train_x,'train_x.pickle')
+save_pickle(train_y,'train_y.pickle')
+save_pickle(val_x,'val_x.pickle')     
+save_pickle(val_y,'val_y.pickle')
+save_pickle(test_x,'test_x.pickle')
+save_pickle(test_y,'test_y.pickle')
         
