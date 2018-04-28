@@ -26,27 +26,16 @@ import pickle as pkl
 from sklearn.preprocessing import LabelEncoder
 
 #List of Hypermeters
-
+data = pd.read_csv("mbti_1.csv")
 max_sent_len = 1000
-num_sentences = 5000
-EPOCHS = 5
-BATCH = 100
-
-
-
-
-
-
-
-
-
-
-
+num_sentences = len(data["posts"])
+EPOCHS = 10
+BATCH = 150
 
 
 unique_type_list = ['INFJ', 'ENTP', 'INTP', 'INTJ', 'ENTJ', 'ENFJ', 'INFP', 'ENFP',
        'ISFP', 'ISTP', 'ISFJ', 'ISTJ', 'ESTP', 'ESFP', 'ESTJ', 'ESFJ', '#####']
-data = pd.read_csv("mbti_1.csv")
+
 #print data["type"]
 
 
