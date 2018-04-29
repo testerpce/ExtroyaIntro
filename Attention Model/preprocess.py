@@ -168,7 +168,7 @@ print("Vector Preprocessing Started .....")
 
 X_word = pad_sequences(maxlen = max_sent_len, sequences = X_word, padding = "post", value = word_to_id["<UNK>"])
 X_pos = pad_sequences(maxlen = max_sent_len, sequences = X_pos, padding = "post", value = pos_to_id["<UNK>"])
-Y = pad_sequences(maxlen = max_sent_len, sequences = Y, padding = "post", value = 17)  
+Y = pad_sequences(maxlen = max_sent_len, sequences = Y, padding = "post", value = 16)  
 
 
 
