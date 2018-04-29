@@ -176,6 +176,9 @@ print("Data Vectors Modified .....")
 print("Converting into one-hot representations .....")
 print("One-hot vectors generated .....")   
 
+X_word, X_test, Y1, Y_test = train_test_split(X_word, Y, test_size = 0.1)
+X_pos, X_pos_test, _, _ = train_test_split(X_pos, Y, test_size = 0.1)
+Y = Y1
 
 input_data = Input(shape = (max_sent_len, ))
 word_embedding = Embedding(input_dim = len(word_to_id.keys()), output_dim = 25, input_length = max_sent_len, mask_zero = True)(input_data)
