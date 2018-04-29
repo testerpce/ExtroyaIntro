@@ -30,7 +30,7 @@ data = pd.read_csv("mbti_1.csv")
 max_sent_len = 1000
 num_sentences = len(data["posts"])
 EPOCHS = 10
-BATCH = 150
+BATCH = 50
 
 
 unique_type_list = ['INFJ', 'ENTP', 'INTP', 'INTJ', 'ENTJ', 'ENFJ', 'INFP', 'ENFP',
