@@ -206,3 +206,21 @@ plt.ylabel("Accuracy")
 plt.legend(loc = "upper left")
 plt.savefig("accuracy.png")
 plt.show()
+
+
+
+
+
+tag_list = ['INFJ', 'ENTP', 'INTP', 'INTJ', 'ENTJ', 'ENFJ', 'INFP', 'ENFP', 'ISFP', 'ISTP', 'ISFJ', 'ISTJ', 'ESTP', 'ESFP', 'ESTJ', 'ESFJ', '#####']
+
+
+
+prediction = model.predict([X_test, np.array(X_pos_test).reshape((len(X_pos_test), max_sent_len))])
+#accuracy = 0
+#c = 0
+
+for i in range(len(X_test)):
+    pred = np.argmax(prediction[i], axis = -1)
+    y = min(pred)
+    x = min(Y_test[i])
+    print "True Label: ", tag_list[x], "Predicted Label: ", tag_list[y] 
