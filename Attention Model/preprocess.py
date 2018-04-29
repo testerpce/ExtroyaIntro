@@ -193,7 +193,7 @@ model.summary()
 plot_model(model, to_file='attention_model.png')
 history = model.fit([X_word, np.array(X_pos).reshape((len(X_pos), max_sent_len))], np.array(Y).reshape(len(Y), max_sent_len, 1), batch_size = BATCH, epochs = EPOCHS, validation_split = 0.1, verbose = 1)
 loss, accuracy = model.evaluate([X_word, np.array(X_pos).reshape((len(X_pos), max_sent_len))], np.array(Y).reshape(len(Y), max_sent_len, 1), batch_size= BATCH, verbose=1)
-print("\nTest Loss: {}, Accuracy on Test Data: {} \n".format(loss, accuracy))
+print("\nTraining Loss: {}, Accuracy on Train Data: {} \n".format(loss, accuracy))
 histogram = pd.DataFrame(history.history)
 
 
