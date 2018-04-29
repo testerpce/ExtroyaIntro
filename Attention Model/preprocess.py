@@ -199,7 +199,7 @@ histogram = pd.DataFrame(history.history)
 
 plt.style.use("ggplot")
 plt.figure(1)
-plt.plot(histogram["acc"], label = "Test Accuracy")
+plt.plot(histogram["acc"], label = "Training Accuracy")
 plt.plot(histogram["val_acc"], label = "Validation Accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Accuracy")
